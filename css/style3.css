@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #47344A;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 40px;
+    color: #47344A;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #47344A;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #47344A;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.products .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.products .box-container .box {
+    display: flex;
+    width: 700px; /* Adjust width as needed */
+    background-color: whitesmoke;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+}
+
+.products .box-container .box .image {
+    flex: 0 0 180px; /* Maintain image width */
+}
+
+.products .box-container .box .image img {
+    border-radius: 5px;
+}
+
+.products .box-container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products .box-container .content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #47344A;
+}
+
+.products .box-container .content p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.products .box-container .content .details {
+    margin: 10px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.products .box-container .content .details p {
+    margin: 4px 0;
+}
+
+.products .box-container .content .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.products .box-container .content .quantity-input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.products .box-container .content .add-to-cart {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #47344A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.products .box-container .content .add-to-cart:hover {
+    background-color: #5e3b5f;
+}
